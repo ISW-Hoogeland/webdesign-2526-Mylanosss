@@ -5,11 +5,12 @@ body {
   font-family: var(--font-main);
   display: grid;
   grid-template-areas:
-  "header header"
-  "nav main"
+  "header nav"
+  "main main"
   "footer footer";
-  grid-template-columns: 1fr 5fr;
+  grid-template-columns: 1fr 1fr;
   grid-template-rows: 120px 1fr 60px;
+  background-color: #a3b18a;
 }
 header {
   grid-area: header;
@@ -22,6 +23,17 @@ main {
 }
 footer {
   grid-area: footer;
+  background-color: #588157;
+}
+
+h1 {
+  color: var(--h1-text);
+  border-bottom: 3px solid var(--h2-border);
+  padding-bottom: 1px;
+}
+
+h3 {
+  color: var(--h3-text);
 }
 
 :root {
@@ -29,11 +41,11 @@ footer {
     --text-dark: #2c3e50;
     --font-main: 'Segoe UI', sans-serif;
 
-    --h1-bg: #C1ECAF;
-    --h1-text: #c4f4c7;
-    --h2-text: #c7ffda;
+    --h1-bg: #344e41;
+    --h1-text: #344e41;
+    --h2-text: #3a5a40;
     --h2-border: var(--h1-bg);
-    --h3-text: #D67160;
+    --h3-text: #a3b18a;
 
     --list-bg: #e8f8f0;
     --list-border: #A1D69A;
