@@ -18,12 +18,20 @@ header {
 nav {
   grid-area: nav;
 }
+
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
 main {
   grid-area: main;
 }
 footer {
   grid-area: footer;
   background-color: #588157;
+  
 }
 
 h1 {
@@ -32,8 +40,17 @@ h1 {
   padding-bottom: 1px;
 }
 
+h2 {
+  color: var(--h2-text);
+
+}
+
 h3 {
   color: var(--h3-text);
+}
+
+footer h3 {
+  padding-left: 15px;
 }
 
 :root {
