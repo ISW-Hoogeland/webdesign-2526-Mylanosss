@@ -135,14 +135,14 @@ img {
 .onder {
   display: flex;
   flex-direction: column;
-  max-width: 300px;
+  max-width: 250px;
   text-align: center;
 }
 
 .boven {
   display: flex;
-  flex-direction: column-reverse;
-  max-width: 300px;
+  flex-direction: column;
+  max-width: 250px;
   text-align: center;
 } 
 
