@@ -9,11 +9,12 @@ body {
   "main main"
   "footer footer";
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 120px 1fr 60px;
+  grid-template-rows: 80px 1fr 60px;
   background-color: #a3b18a;
 }
 header {
   grid-area: header;
+  margin: 10px;
 }
 nav {
   grid-area: nav;
@@ -25,8 +26,21 @@ nav ul {
   align-items: center;
 }
 
+nav a {
+   text-decoration: none;
+   font-weight: 700;
+   font-size: 23px;
+}
+
+nav a:hover {
+   text-decoration: underline;
+   font-weight: bold;
+}
+
+
 main {
   grid-area: main;
+  margin-left: 10px;
 }
 footer {
   grid-area: footer;
@@ -38,11 +52,13 @@ h1 {
   color: var(--h1-text);
   border-bottom: 3px solid var(--h2-border);
   padding-bottom: 1px;
+  font-family: "anta", sans-serif;
 }
 
 h2 {
   color: var(--h2-text);
-  font-size: 18px;
+  font-size: 30px;
+  font-family: "Roboto+Slab", sans-serif;
 }
 
 h3 {
@@ -51,6 +67,13 @@ h3 {
 
 footer h3 {
   padding-left: 15px;
+  font-family: "anta", sans-serif;
+}
+
+p{
+font-family: "Oswald", sans-serif;
+font-size: 20px;
+  
 }
 
 :root {
@@ -58,11 +81,16 @@ footer h3 {
     --text-dark: #2c3e50;
     --font-main: 'Segoe UI', sans-serif;
 
-    --h1-bg: #344e41;
-    --h1-text: #344e41;
-    --h2-text: #3a5a40;
+    --color1: #dfeedf;
+    --color2: #011801;
+
+
+    --h1-bg: #000000;
+    --h1-text: #000000;
+    --h2-text: #2c5333;
     --h2-border: var(--h1-bg);
     --h3-text: #a3b18a;
+    --p-text: #143d0a;
 
     --list-bg: #e8f8f0;
     --list-border: #A1D69A;
@@ -78,4 +106,12 @@ footer h3 {
 
     --footer-bg: var(--h1-bg); 
     --footer-text: var(--h1-text);
+
+}
+
+html, body{
+height: 100%;
+margin: 0;
+background: linear-gradient(135deg, var(--color1), var(--color2));
+
 }
