@@ -53,13 +53,15 @@ h1 {
   color: var(--h1-text);
   border-bottom: 3px solid var(--h2-border);
   padding-bottom: 1px;
-  font-family: "anta", sans-serif;
+  font-family: "anta", sans-serif; 
 }
 
 h2 {
   color: var(--h2-text);
-  font-size: 30px;
-  font-family: "Roboto+Slab", sans-serif;
+  font-size: 35px;
+  font-family: "Roboto Slab", sans-serif;
+  text-align: center;
+  border-bottom: 2px solid var(--h2-text);
 }
 
 h3 {
@@ -84,8 +86,10 @@ font-size: 20px;
 
     --color1: #dfeedf;
     --color2: #000a00;
-
-
+    
+    --color3: #427045;
+    --color4: #ffffff;
+    
     --h1-bg: #000000;
     --h1-text: #000000;
     --h2-text: #2c5333;
@@ -155,4 +159,9 @@ img {
   gap: 20px;
   justify-content: center;
   flex-wrap: wrap;
+}
+
+a {
+  color: var(--color3)
+  font-family: "Momo Trust Display", sans-serif;
 }
