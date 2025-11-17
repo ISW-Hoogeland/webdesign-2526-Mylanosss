@@ -163,5 +163,5 @@ img {
 
 a {
   color: var(--color3)
-  font-family: "Momo Trust Display", sans-serif;
+  font-family = "Momo Trust Display", sans-serif;
 }
